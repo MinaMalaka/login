@@ -68,7 +68,7 @@ function login() {
     }
     else {
         if (existEmail() == true) {
-            location.replace('file:///D:/route%20diploma%2010-2023/js%20course/projects/assignment-4%20(login)/pages/Home.html')
+            location.replace('./pages/Home.html')
         } else {
             err.classList.add('d-none')
             note.classList.remove('d-none')
@@ -78,7 +78,7 @@ function login() {
 }
 //logout fns
 function logOut() {
-    location.replace('file:///D:/route%20diploma%2010-2023/js%20course/projects/assignment-4%20(login)/index.html')
+    location.replace('../index.html')
 
 }
 //set home user name
@@ -87,47 +87,6 @@ for (var i = 0; i < userList.length; i++) {
         document.getElementById('hello').innerHTML = `Welcome ${localStorage.getItem('loginName')}`
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
